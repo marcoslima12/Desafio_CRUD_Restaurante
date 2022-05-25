@@ -1,7 +1,6 @@
-import {Request, Response } from 'express';
-import {Restaurant } from '@models/Restaurant';
+import {Request, Response} from 'express';
+import { Restaurant } from '@models/Restaurant';
 import {Citi, Crud} from '../global'
-
 
 export default class RestaurantController implements Crud{
     
