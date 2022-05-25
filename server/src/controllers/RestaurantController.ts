@@ -29,6 +29,7 @@ export default class RestaurantController implements Crud{
         if(!restaurantFound) return response.status(400).send({message});
 
         const {httpStatus, messageFromDelete} = await Citi.deleteValue(Restaurant, restaurantFound);
+        return response.status(httpStatus).send({messageFromDelete});
     }
 
     async update(request: Request, response: Response){

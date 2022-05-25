@@ -13,7 +13,7 @@ routes.put('/user/:id', userController.update);
 
 routes.post('/restaurant', restaurantController.create);
 routes.get('/restaurant', restaurantController.get);
-routes.get('restaurant/:id', restaurantController.get);
-routes.get('restaurant/:id', restaurantController.update);
+routes.delete('/restaurant/:id', restaurantController.delete);
+routes.put('/restaurant/:id', restaurantController.update);
 
 export default routes;
